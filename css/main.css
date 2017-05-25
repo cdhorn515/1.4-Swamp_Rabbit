@@ -3,12 +3,12 @@
 /*subheader-msg*/
 @font-face {
   font-family: 'Poiret One';
-  src: url('http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2');
+  src: url('https://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2');
 }
 /*main-heading, callout-message, contact-wrapper*/
 @font-face {
   font-family: 'Oleo Script';
-  src: url('http://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2');
+  src: url('https://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2');
 }
 
 * {
@@ -17,15 +17,15 @@
 
 body{
   width: 1280px;
-  background-color: #000000;
-
+  background-color: #FFFFFF;
+  margin: 0;
 }
 /*top of page with pic and text*/
 .site-header {
-  width: 625px;
-  height: 250px;
+
+  height: 520px;
   background-image: url('../img/header-background.jpg');
-  background-size: cover;
+  background-size: cover
   margin: 0 auto;
 }
 /*image in header*/
@@ -54,7 +54,7 @@ h2 .subheader-msg{
   position: relative;
   background-color: #FFFFFF;
   height: 180px;
-  width: 625px;
+
   margin: 0 auto;
   padding-top: 252px;
 }
@@ -82,14 +82,13 @@ li {
 }
 
 .callout-wrapper{
-  width: 625px;
-  height: 98px;
+  height: 200px;
   margin: 0 auto;
   background-color: #25996E;
   color: #FFFFFF;
   font-family: 'Poiret One';
   text-shadow: 1px 1px 1px #206047;
-  font-size: 16px;
+  font-size: 40px;
   text-align: center;
   padding: 5px 120px 25px 120px;
 }
@@ -98,15 +97,13 @@ li {
 }
 
 .contact-wrapper {
-  width: 625px;
-  height: 120px;
+  height: 250px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 footer {
-  height: 40px;
-    width: 625px;
+  height: 80px;
     margin: 0 auto;
   background-color: #333333;
   color: #FFFFFF
