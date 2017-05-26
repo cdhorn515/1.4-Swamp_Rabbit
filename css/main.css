@@ -1,18 +1,26 @@
 
-
-/*subheader-msg*/
-@font-face {
-  font-family: 'Poiret One';
-  src: url('https://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2');
-}
 /*main-heading, callout-message, contact-wrapper*/
 @font-face {
   font-family: 'Oleo Script';
-  src: url('https://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2');
+  src: local('Oleo Script'),  url('https://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2');
+  font-weight: 400;
+}
+/*subheader-msg*/
+@font-face {
+  font-family: 'Poiret One';
+  src: local('Poiret One'),  url('https://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2');
+  font-weight: 400;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent:
 }
 
 body{
@@ -22,89 +30,127 @@ body{
 }
 /*top of page with pic and text*/
 .site-header {
-
+  margin: 0;
   height: 520px;
+  width: inherit;
   background-image: url('../img/header-background.jpg');
-  background-size: cover
-  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*image in header*/
 .header-wrapper{
  padding: 60px 140px 100px;
  color: #FFFFFF;
-
 }
-
+/*Swamp Rabbit Cycling text*/
 .main-heading {
  font-family: 'Poiret One';
- font-size: 30px;
+ font-size: 70px;
+ text-shadow: 2px 2px 2px #5C5C5C;
+ padding-top: 55px;
+ margin-right: 80px;
+ text-align: center;
 }
-
-h2 .subheader-msg{
-  font-family: 'Oleo Script'
-  font-size: 10px
+.divider {
+  border-width: 1.5px;
+  border-style: solid;
+  margin: 45px 230px 40px 190px;
 }
+/*Bringing you the best....text*/
+h2.subheader-msg{
+  font-family: 'Oleo Script';
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #5C5C5C;
+}
+/*bycicle logo to right of SRC text*/
 .logo {
   position: absolute;
-  background-image: url('../img/logo/png');
-  color: #FFFFFF;
+  margin-top: 40px;
+  margin-left: 760px;
+  z-index: 1;
+  filter: invert();
+  background-image: url('../img/logo.png');
+  height: 250px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
+/*first white box with pictures*/
 .site-imgs {
-  position: relative;
   background-color: #FFFFFF;
-  height: 180px;
-
+  height: 370px;
   margin: 0 auto;
-  padding-top: 252px;
+  display: flex;
 }
-
+/*pictures inside white box*/
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 li {
   list-style: none;
+  margin-top: 10px;
+  margin right: 10px;
+  margin-bottom: 30px;
+
 }
 #left-img {
-  src: url('../img/left-img.jpg');
-  height: 148;
-  width: 148;
+  background-image: url('../img/left-img.jpg');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
 }
 
 #middle-img {
-  src: url('../img/middle-img.jpg');
-  height: 148;
-  width: 148;
+  background-image: url('../img/middle-img.jpg');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
 }
-
 
 #right-img {
-  src: url('../img/right-img.jpg');
-  height: 148;
-  width: 148;
+  background-image: url('../img/right-img.jpg');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
 }
-
+/*green section*/
 .callout-wrapper{
   height: 200px;
-  margin: 0 auto;
   background-color: #25996E;
   color: #FFFFFF;
   font-family: 'Poiret One';
-  text-shadow: 1px 1px 1px #206047;
-  font-size: 40px;
+  text-shadow: 2px 2px 2px #206047;
+  font-size: 36px;
   text-align: center;
-  padding: 5px 120px 25px 120px;
+  padding: 30px 250px 50px 250px;
 }
-.callout-msg {
-
-}
-
+/*second white section with contact info*/
 .contact-wrapper {
+  display: flex;
   height: 250px;
-  margin: 0 auto;
   background-color: #FFFFFF;
+  font-family: 'Poiret One';
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 auto;
+  padding: 30px 250px;
 }
 
+.contact-msg{
+  flex-wrap: wrap;
+}
+/*Bottom of page*/
 footer {
   height: 80px;
-    margin: 0 auto;
   background-color: #333333;
-  color: #FFFFFF
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+
 }
